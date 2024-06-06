@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+    <!-- CSS -->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <title>website || artificial intelligence</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-primaryColor dark:bg-darkColor fixed top-0 left-0 w-full z-50" id="header">
+      <nav class="container relative h-14 flex justify-between items-center">
+        <div>
+          <a href="#" class="text-2xl uppercase  font-oswald">
+            Artificial<span class="text-secondaryColor">Intelligence</span>
+          </a>
+        </div>
+
+        <div class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor dark:bg-darkColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto" id="nav-menu">
+          <ul class="flex flex-col text-center gap-5 md:flex-row">
+            <li>
+              <a href="#home" class="nav__link text-secondaryColor hover:text-secondaryColor ease-in duration-200">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="nav__link hover:text-secondaryColor ease-in duration-200">About Us</a>
+            </li>
+            <li>
+              <a href="#menu" class="nav__link hover:text-secondaryColor ease-in duration-200">Menu</a>
+            </li>
+            <li>
+              <a href="#review" class="nav__link hover:text-secondaryColor ease-in duration-200">Review</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav__link hover:text-secondaryColor ease-in duration-200">Contact</a>
+            </li>
+          </ul>
+
+          <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <i class="ri-moon-line cursor-pointer ml-4 text-xl" id="theme-toggle"></i>
+
+          <div class="md:hidden" id="artificial">
+            <i class="ri-menu-2-line cursor-pointer text-xl"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <div class="container flex flex-col items-center gap-10 md:flex-row">
+          <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
+            <img src="./img/home-image.png" alt="home image" class="home__image w-60 md:w-full">
+          </div>
+
+          <div class="home__content text-center md:basis-1/2 md:text-start lg:basis-3/5">
+            <h1 class="home__title">Discover the Latest in AI: News, Research, and More!</h1>
+            <div class="separator mx-auto md:mx-0"></div>
+            <p class="paragraph">Dive into the fascinating world of artificial intelligence with our comprehensive website. Explore the latest advancements, research, and insights from leading experts. Stay informed, engaged, and inspired by the future of AI.</p>
+            <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
+              <div class="text-center">
+                <i class="fa-solid fa-brain text-secondaryColor text-4xl"></i>
+                <br />
+                Discover
+              </div>
+
+              <div class="text-center">
+                <i class="fa-solid fa-book text-secondaryColor text-4xl"></i>
+                <br />
+                Learn
+              </div> 
+
+              <div class="text-center">
+                <i class="fa-brands fa-globe text-secondaryColor text-4xl"></i>
+                <br />
+                Shape
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-primary">learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category -->
+      <section id="category">
+        <div class="container flex flex-col gap-5 md:flex-row">
+          <!-- card 1 -->
+          <div class="category__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="img/ai-1.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+            </div>
+
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">NEWS</h4>
+                <p class="text-xs">Provides the latest in AI</p>
+              </div>
+
+              <a href="#" class="text-blackColor cursor-pointer">Explore</a>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="category__card bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="img/ai-2.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+            </div>
+
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">RESEARCH</h4>
+                <p class="text-xs">Everything on AI</p>
+              </div>
+
+              <a href="#" class="text-secondaryColor cursor-pointer">Explore</a>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="category__card bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="img/ai-3.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+            </div>
+
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">MORE</h4>
+                <p class="text-xs">Discover new in AI</p>
+              </div>
+
+              <a href="#" class="text-secondaryColor cursor-pointer">Explore</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promo -->
+      <section id="promo">
+        <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
+          <!-- card 1 -->
+          <div class="promo__card-1 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+            <img src="img/section-1.png" alt="promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
+
+            <div class="space-y-2 pt-5 md:pt-0">
+              <h3 class="card__title">Case Studies and Real-World Applications </h3>
+              <p class="paragraph">Discover how AI is being used in various 
+                 industries and sectors, from healthcare and finance to 
+                 manufacturing and transportation. Explore the practical 
+                 applications of AI and its potential to solve real-world 
+                 problems. Learn about successful case studies and how AI 
+                 is transforming different areas of our lives.</p>
+              <a href="#" class="text-xs text-secondaryColor">Learn more</a>  
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="promo__card-2 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+            <img src="img/section-2.png" alt="promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
+
+            <div class="space-y-2 pt-5 md:pt-0">
+              <h3 class="card__title">Ethical Considerations & Responsible Development</h3>
+              <p class="paragraph">As AI continues to evolve, it's crucial to consider its 
+                ethical implications and ensure responsible development. We explore the 
+                ethical considerations surrounding AI, including bias, fairness, and 
+                transparency. This section addresses the important issues of responsible
+                development and promotes ethical practices in the field of AI.</p>
+              <a href="#" class="text-xs text-secondaryColor">Learn more</a>  
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <div class="container flex flex-col gap-10 md:flex-row">
+          <div class="about__img flex-1">
+            <img src="img/about.jpg" alt="about image" class="rounded-lg">
+          </div>
+
+          <div class="about__content flex-1">
+            <h2 class="section__title">The Future of AI </h2>
+            <div class="separator"></div>
+            <p class="paragraph">Join us as we explore the future of AI and its potential impact on society. We delve into the exciting possibilities and challenges that lie ahead, offering insights into how AI will shape our world in the years to come. This section provides a glimpse into the future of AI and encourages thoughtful discussion about its potential impact on various aspects of society.</p>
+            <ul class="grid grid-cols-2 py-5 space-y-1">
+              <li class="text-xs text-paragraphColor"> 
+                <i class="fa-solid fa-check text-secondaryColor"></i> 
+                Efficiency
+              </li>
+              <li class="text-xs text-paragraphColor">
+                <i class="fa-solid fa-check text-secondaryColor"></i> 
+                Availability
+              </li>
+              <li class="text-xs text-paragraphColor"> 
+                <i class="fa-solid fa-check text-secondaryColor"></i> 
+                Data Analysis
+              </li>
+              <li class="text-xs text-paragraphColor">
+                <i class="fa-solid fa-check text-secondaryColor"></i> 
+                Automation
+              </li>
+            </ul>
+            <a href="" class="btn btn-primary">About us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu -->
+      <section id="menu">
+        <div class="container">
+          <div class="max-w-md mx-auto text-center">
+            <h2 class="section__title">Exclusive Interviews with Leading AI Researchers and Developers</h2>
+            <div class="separator mx-auto"></div>
+            <p class="paragraph">Get firsthand insights from the minds shaping the future of AI. Learn about their groundbreaking work, the challenges they face, and their vision for the future. Discover the stories behind the innovations and gain a deeper understanding of the field through the perspectives of leading researchers and developers.</p>
+
+            <div class="tabs_wrap">
+              <ul class="flex flex-wrap justify-center gap-2 py-10">
+                <li data-tabs="all" class="btn bg-primaryColorLight dark:bg-darkColorLight active">All</li>
+                <li data-tabs="learn" class="btn bg-primaryColorLight dark:bg-darkColorLight">Learn</li>
+                <li data-tabs="explore" class="btn bg-primaryColorLight dark:bg-darkColorLight">Explore</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="menu__items">
+            <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+              <!-- learn  -->
+              <li class="item_wrap learn">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="img/pic-1.png" alt="learn image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">In-Depth Articles and Reports</h4>
+                    <p class="paragraph">Exploring the latest advancements in machine learning, deep learning, natural language processing, computer vision, and more.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item_wrap learn">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="img/pic-2.png" alt="learn image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Interactive Tutorials and Guides</h4>
+                    <p class="paragraph">Get hands-on experience with AI through our interactive tutorials and guides.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item_wrap learn">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="img/pic-3.png" alt="learn image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Curated News and Updates</h4>
+                    <p class="paragraph">Stay informed about the latest developments in the AI field. We bring you news from around the globe.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item_wrap learn">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="img/pic-4.png" alt="learn image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Engaging Discussions and Forums</h4>
+                    <p class="paragraph">Connect with fellow AI enthusiasts and experts. Share your ideas, ask questions, and participate in discussions about the future of AI.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item_wrap learn">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="img/pic-5.png" alt="learn image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Comprehensive Glossary of AI Terms</h4>
+                    <p class="paragraph">Demystify the world of AI with our comprehensive glossary of terms. Learn about key concepts, algorithms, and technologies in a clear and concise way.</p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- explore  -->
+              <li class="item_wrap explore">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="img/pic-6.png" alt="explore image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Industry Applications</h4>
+                    <p class="paragraph">Discover real-world applications of AI across various industries, from healthcare to finance to transportation.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item_wrap explore">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="img/pic-7.png" alt="explore image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">AI Tools and Technologies</h4>
+                    <p class="paragraph">Discover the latest tools, frameworks, and technologies driving AI innovation, with reviews and recommendations from our experts.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item_wrap explore">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="img/pic-8.png" alt="explore image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Jobs and Careers</h4>
+                    <p class="paragraph">Explore career opportunities in the field of artificial intelligence, with job listings, career advice, and insights into the growing demand for AI professionals.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item_wrap explore">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="img/pic-9.png" alt="explore image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">Policy and Regulation</h4>
+                    <p class="paragraph">Stay updated on the latest policies, regulations, and initiatives shaping the legal landscape of AI, and explore implications for businesses and society.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item_wrap explore">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="img/pic-10.png" alt="explore image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">AI and Human-Computer Interaction</h4>
+                    <p class="paragraph">Explore how AI is shaping the future of human-computer interaction.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item_wrap explore">
+                <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                  <img src="img/pic-11.png" alt="explore image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                </div>
+
+                <div class="pt-5">
+                  <div class="mb-2">
+                    <h4 class="card__title">AI and Robotics</h4>
+                    <p class="paragraph">Delve into the intersection of AI and robotics, exploring advancements in autonomous systems, humanoid robots, and collaborative robots.</p>
+                  </div>
+                </li>
+
+                <li class="item_wrap explore">
+                  <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                    <img src="img/pic-12.png" alt="explore image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                  </div>
+  
+                  <div class="pt-5">
+                    <div class="mb-2">
+                      <h4 class="card__title">Startups and Innovators</h4>
+                      <p class="paragraph">Spotlight emerging startups and innovative companies pioneering new AI technologies and applications.</p>
+                    </div>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Review -->
+      <section id="review" class="bg-primaryColorLight dark:bg-darkColorLight py-20">
+        <div class="customer__review container">
+          <div class="max-w-md mx-auto text-center">
+            <h2 class="section__title">REVIEW</h2>
+            <div class="separator mx-auto"></div>
+            <p class="paragraph">AI requires ongoing human oversight for accountability and ethical decision-making.</p>
+          </div>
+
+          <div class="swiper py-10">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                  <p class="paragraph">Maintain human control for AI accountability and ethics.</p>
+                  <div class="flex items-center">
+                    <img src="img/review-1.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                    <div class="ml-2">
+                      <p class="font-oswald uppercase">Human Oversight</p>
+                    </div>
+                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                  </div>
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                  <p class="paragraph">Implement policies for safety and fairness.</p>
+                  <div class="flex items-center">
+                    <img src="img/review-2.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                    <div class="ml-2">
+                      <p class="font-oswald uppercase">Regulation</p>
+                    </div>
+                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                  </div>
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                  <p class="paragraph">Work together for responsible AI development.</p>
+                  <div class="flex items-center">
+                    <img src="img/review-3.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                    <div class="ml-2">
+                      <p class="font-oswald uppercase">Global Cooperation</p>
+                    </div>
+                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                  </div>
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                  <p class="paragraph">Design AI systems with human needs and values in mind.</p>
+                  <div class="flex items-center">
+                    <img src="img/review-4.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                    <div class="ml-2">
+                      <p class="font-oswald uppercase">Human-Centric Design</p>
+                    </div>
+                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                  </div>
+                </div>
+              </li>
+
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-primaryColor dark:bg-darkColor rounded-lg p-6">
+                  <p class="paragraph">Promote understanding of AI technologies and their implications.</p>
+                  <div class="flex items-center">
+                    <img src="img/review-5.jpg" alt="review image" class="w-12 h-12 rounded-full">
+                    <div class="ml-2">
+                      <p class="font-oswald uppercase">Awareness</p>
+                    </div>
+                    <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="bg-secondaryColor py-16">
+        <div class="container flex flex-col gap-5 md:items-center md:flex-row">
+          <div class="space-y-4 md:flex-1">
+            <h2 class="section__title text-blackColor">GET EXCLUSIVE UPDATE</h2>
+            <p class="text-sm">Become part of the global AI community. Connect with other enthusiasts, experts, and developers, and contribute to the ongoing conversation about the future of AI. Share your knowledge, learn from others, and collaborate on projects that advance the field.</p>
+          </div>
+
+          <div class="flex flex-col gap-3 md:flex-row md:flex-1">
+            <input type="email" placeholder="Email address" class="p-2 text-blackColor rounded-lg outline-none md:w-full">
+            <a href="" class="flex items-center justify-center gap-2 btn bg-blackColor hover:opacity-75">
+              <i class="fa-solid fa-paper-plane"></i>
+              Subscribe
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer -->
+    <footer>
+      <section class="footer">
+        <div class="container">
+          <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+            <li>
+              <div class="space-y-3">
+                <a href="" class="text-4xl font-oswald uppercase">
+                  Artificial<span class="text-secondaryColor">Intelligence</span>
+                </a>
+
+                <p class="text-xs">
+                  DISCOVER, LEARN, AND SHAPE THE FUTURE OF ARTIFICIAL INTELLIGENCE
+                </p>
+              </div>
+            </li>
+            <br/>
+            <li>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-lg uppercase font-oswald">SUPPORT</h3>
+                <a href="" class="text-xs hover:text-secondaryColor">Privacy Policy</a>
+                <a href="" class="text-xs hover:text-secondaryColor">Term & Condition</a>
+                <a href="" class="text-xs hover:text-secondaryColor">Contact</a>
+              </div>
+            </li>
+
+            <li class="space-y-8">
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">phone</h3>
+
+                <p class="flex items-center gap-2 text-xs">
+                  <i class="fa-solid fa-phone text-lg text-secondaryColor"></i>
+                  0924-681-0121
+                </p>
+              </div>
+
+              <li class="space-y-8">
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">email</h3>
+
+                <p class="flex items-center gap-2 text-xs">
+                  <i class="fa-solid fa-envelope text-lg text-secondaryColor"></i>
+                  artificial.intelligence@email.com
+                </p>
+              </div>
+            </li>
+            <br/>
+
+            <li class="space-y-8">
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">address</h3>
+
+                <p class="flex items-center gap-2 text-xs">
+                  <i class="fa-solid fa-location-dot text-lg text-secondaryColor"></i>
+                  Philippines
+                </p>
+              </div>
+              <br/>
+
+              <li class="space-y-8">
+              <div class="space-y-2">
+                <h3 class="text-lg uppercase font-oswald">follow us</h3>
+
+                <div class="space-x-3">
+                  <i class="fa-brands fa-facebook-f text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                  <i class="fa-brands fa-twitter text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                  <i class="fa-brands fa-square-instagram text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="flex flex-col items-center border-t border-primaryColorLight dark:border-darkColorLight py-5 md:flex-row md:justify-between">
+            <p class="paragraph">Artifical Intelligence</p>
+            <p class="paragraph">All rights reserved</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Scroll Up -->
+    <a href="#" class="fixed right-4 -bottom-1/2 bg-secondaryColor shadow-sm inline-block px-4 py-2 rounded-full text-lg text-blackColor z-50 hover:-translate-y-1 ease-in duration-200" id="scroll-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        speed: 400,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+        },
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        grabCursor: true,
+        breakpoints: {
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 1024px
+          1024: {
+            slidesPerView: 3,
+          }
+        }
+      });
+    </script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Main.js -->
+    <script src="main.js"></script>
+  </body>
+</html>
